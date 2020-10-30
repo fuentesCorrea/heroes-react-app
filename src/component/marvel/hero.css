@@ -1,0 +1,11 @@
+.foto {
+    width: 150px;
+    height: 150px;
+    display: block;
+    list-style: none;
+    display: flex;
+}
+
+.principal {
+    margin-top: 10px;
+}
