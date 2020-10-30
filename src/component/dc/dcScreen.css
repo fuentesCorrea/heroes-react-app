@@ -44,7 +44,7 @@
     }
     
     .progressbar li.active {
-        color: red;
+        color: blue;
     }
     
     .progressbar li.active:before {
