@@ -1,27 +1,22 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 
-import { Link, Redirect, useParams } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
+
 
 import { getSelectorById } from '../../selector/getSelectorById';
 
 
 const HeroesScreem = (props) => {
-
-
 const {heroeid} = useParams();
-
-
-const info = getSelectorById(heroeid)
-
+const info = useMemo(()=>getSelectorById(heroeid),[heroeid]);
 if(!info){
     return <Redirect to="/" />
 }
 
 const {alter_ego,
-        characters,
+       
         first_appearance,
-        publisher,
-        superhero} = info
+       } = info
 
 
 
@@ -29,9 +24,6 @@ const onReturn = () => {
      console.log(props.history);
      props.history.replace('/')
 }
-
-
-
     return (
       <div className="row  card-columns m-4">
         <div className=" col-4 card">

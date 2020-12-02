@@ -1,0 +1,28 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        color: darken($color: white, $amount: 20);
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-radius: 5px;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+.btn-google {
+    margin-left: 10px;
+    &:focus {
+        outline: none;
+    }
+}

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 const Card = ({
+  
     id,
     alter_ego,
     characters,
@@ -13,6 +14,8 @@ const Card = ({
     superhero
 
 }) => {
+
+
 
     const path = (id) => {
     return `/assets/heroes/${id}.jpg`;

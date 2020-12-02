@@ -6,9 +6,8 @@ import Card from "./Card";
 const HeroList = ({ publisher }) => {
   const data = getSelectorByPublisher(publisher);
   
-    console.log(data);
   return (
-    <div className="card-columns m-5">
+    <div className="card-columns m-5 ">
       
         {data.map(item=>(
              <Card

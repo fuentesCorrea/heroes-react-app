@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { getSelectorById } from '../../selector/getSelectorById'
+// import { getSelectorById } from '../../selector/getSelectorById'
 import '../dc/dcScreen.css'
 
 const DcScreem = () => {
 
-    const data = getSelectorById('dc-superman')
-    console.log(data , 'desde dc');
+    // const data = getSelectorById('dc-superman')
+
     return (
         <div className="wraap">
                     
